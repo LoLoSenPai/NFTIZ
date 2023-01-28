@@ -1,5 +1,4 @@
 import React from "react";
-import heart from "./heart.svg";
 import "./Products.css";
 import { Link } from "react-router-dom";
 import inventory from "../../data/inventory.js";
@@ -21,9 +20,6 @@ export default function Products() {
                         className="img-product"
                         src={process.env.PUBLIC_URL + `/images/${item.img}.png`} 
                         alt="produit" />
-                        <div className="like-container">
-                            <img src={heart} alt="icône j'aime" />
-                        </div>
                     </div>
                     <div className="info">
                         <p>{item.title}</p>
