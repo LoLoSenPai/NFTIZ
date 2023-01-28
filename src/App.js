@@ -10,7 +10,7 @@ import ProductShowcase from './Pages/ProductShowcase/ProductShowcase'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <FloatingCart />
       <Switch>
